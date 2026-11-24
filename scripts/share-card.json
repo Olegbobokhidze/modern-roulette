@@ -1,0 +1,31 @@
+{
+  "publicDir": "public",
+  "devUrl": "http://localhost:5177/",
+  "shot": { "viewport": [1440, 810], "dpr": 2, "query": "./", "waitMs": 2500 },
+  "icon": { "bg": "#0F0F10", "applePad": 0 },
+  "card": {
+    "bg": "#0F0F10",
+    "ink": "#ECE6DA",
+    "muted": "#9A958C",
+    "accent": "#C8B38A",
+    "frame": "rgba(236, 230, 218, 0.10)",
+    "fontsHref": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap",
+    "bodyFont": "'Inter', system-ui, sans-serif",
+    "displayFont": "'Instrument Serif', Georgia, serif",
+    "eyebrow": "European · Single zero",
+    "title": "Roulette",
+    "titleSize": 112,
+    "titleLineHeight": 112,
+    "tagline": "A calm, minimalist table. The ball always lands on the server’s number.",
+    "features": [
+      "Coverage and odds preview on every spot",
+      "Dual-motion wheel and ball physics",
+      "Undo, rebet, 2× and a live provider inspector"
+    ],
+    "author": "Oleg Bobokhidze",
+    "panelWidth": 620,
+    "crop": { "x": 0, "y": 76, "w": 488, "h": 488 },
+    "fadeX": 160,
+    "fadeY": 56
+  }
+}

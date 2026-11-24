@@ -54,6 +54,23 @@ Things worth noticing:
 Keyboard: `Space` spins (or spins again), `Ctrl/⌘+Z` undoes, `1`–`5` choose a chip, `` ` `` toggles
 the inspector, and `Esc` closes sheets. Right-click a stack to remove it.
 
+## Sharing and SEO
+
+Links to the deployed game unfurl as a large preview card on WhatsApp, Telegram, Facebook, LinkedIn,
+Slack, Discord and X.
+
+- `public/og-image.jpg`: the 1200×630 share card (a live screenshot plus themed copy).
+- `share-meta.ts`: a Vite plugin. It reads the title and description from `index.html` and injects
+  Open Graph, Twitter/X, canonical and JSON-LD (`VideoGame`) tags. It also writes `robots.txt` and
+  `sitemap.xml`.
+- Previews need absolute image URLs, so build with the public address:
+  `SITE_URL=https://your-domain/ pnpm build`. Netlify (`URL`) and Vercel (`VERCEL_PROJECT_PRODUCTION_URL`)
+  provide it automatically.
+- After visible UI changes, regenerate the card and icons with `pnpm dev`, then `pnpm share:assets`.
+  Copy, palette and crop live in `scripts/share-card.json`.
+- Check a deployed link with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+  or [opengraph.xyz](https://www.opengraph.xyz/).
+
 ## Engineering records
 
 - [AGENTS.md](AGENTS.md): conventions, folder boundaries and the session workflow
